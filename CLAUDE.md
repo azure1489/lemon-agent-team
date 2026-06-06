@@ -14,7 +14,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - `编辑部通讯录.md` — 飞书群「编辑部」各 Agent 的 Open ID（群消息 mention 用）。
 - `html-guide.md` / `templates/` — 微信公众号 HTML 规范与文章样式模板（发布员专用）。
 - `skills/` — 6 个**自包含**的角色 skill（`lemon-chief-editor` / `lemon-game-intel` / `lemon-topic-researcher` / `lemon-cover-designer` / `lemon-content-writer` / `lemon-publisher`），由对应作业手册忠实转写；共享文件（通讯录、总规范、验收标准、html-guide、templates）以**副本**形式复制在各 skill 的 `references/`、`assets/` 内。
-- `install/` — 6 份发给各 Agent 的自助安装文档（git clone + 复制到 `~/.claude/skills/`）；README 中的对照表链接即指向这里。
+- `install/` — 6 份发给各 Agent 的自助安装文档（主方式 `npx skills add` 自动适配各 agent 环境的技能目录，备选 git clone 手动复制到该环境的技能目录，不写死特定路径）；README 中的对照表链接即指向这里。
 
 **修改时的一致性要求**：通用机制（命名规则、OSS 路径、header 字段、审核流程、版本规则）以总规范为准；改动这类内容必须同步更新所有引用它的作业手册。角色专属细节（如封面规格、采集节奏）只存在于对应手册中；但存在如下**镜像关系，改一处必须同步其余**：
 

@@ -15,7 +15,7 @@
 | 深度内容作者 | `lemon-content-writer` | https://github.com/azure1489/lemon-agent-team/blob/main/install/lemon-content-writer.md |
 | 发布员 | `lemon-publisher` | https://github.com/azure1489/lemon-agent-team/blob/main/install/lemon-publisher.md |
 
-升级 = 重发同一个链接（安装文档为覆盖式安装）。环境装有 `skills` CLI 时也可：`npx skills add azure1489/lemon-agent-team -s <skill名> -g -y`。
+安装文档主方式为 `skills` CLI（`npx skills add azure1489/lemon-agent-team -s <skill名> -g -y`，自动探测 agent 环境并装到对应技能目录，不依赖特定路径）；环境无 Node/npx 时文档内附手动复制方式。升级 = 重发同一个链接（覆盖式安装）。
 
 各 Agent 环境的前置依赖：`lark-cli`（编辑部群消息）、`aliyun-oss-delivery` skill（交付物上传 OSS）；另外游戏情报员需 `opencli` 与 vision toolset，视觉设计师需 `generate-images` skill，发布员需 `md2wechat` 与 `mp-helper` skill。
 
